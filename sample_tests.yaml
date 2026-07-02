@@ -1,0 +1,28 @@
+﻿name: Demo API Suite
+base_url: https://jsonplaceholder.typicode.com
+
+tests:
+  - id: get_post_1
+    name: 获取文章 1
+    method: GET
+    path: /posts/1
+    timeout: 5
+    retry: 1
+    expect:
+      status_code: 200
+      json:
+        userId: 1
+        id: 1
+      text_contains: sunt
+
+  - id: get_user_1
+    name: 获取用户 1
+    method: GET
+    path: /users/1
+    timeout: 5
+    retry: 0
+    expect:
+      status_code: 200
+      json:
+        id: 1
+        username: Bret
