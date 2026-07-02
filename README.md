@@ -1,6 +1,6 @@
 # Test Sprint Lite
 
-[![CI](https://github.com/user/test-sprint-lite/actions/workflows/ci.yml/badge.svg)](https://github.com/user/test-sprint-lite/actions)
+[![CI](https://github.com/shiyuqi234/test-sprint-lite/actions/workflows/ci.yml/badge.svg)](https://github.com/shiyuqi234/test-sprint-lite/actions)
 [![Python](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue)](https://www.python.org/)
 [![Coverage](https://img.shields.io/badge/coverage-99%25-brightgreen)]()
 [![License](https://img.shields.io/badge/license-MIT-green)]()
@@ -27,13 +27,13 @@
 ### 1. Install / 安装
 
 ```bash
-pip install git+https://github.com/user/test-sprint-lite.git
+pip install git+https://github.com/shiyuqi234/test-sprint-lite.git
 ```
 
 Or for development:
 
 ```bash
-git clone https://github.com/user/test-sprint-lite.git
+git clone https://github.com/shiyuqi234/test-sprint-lite.git
 cd test-sprint-lite
 pip install -e ".[dev]"
 ```

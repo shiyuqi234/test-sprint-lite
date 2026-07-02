@@ -10,8 +10,12 @@ readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.9"
 authors = [
-    { name = "Developer" }
+    { name = "shiyuqi234", email = "" }
 ]
+
+[project.urls]
+Homepage = "https://github.com/shiyuqi234/test-sprint-lite"
+Repository = "https://github.com/shiyuqi234/test-sprint-lite"
 keywords = ["testing", "api-testing", "automation", "yaml", "qa"]
 classifiers = [
     "Development Status :: 4 - Beta",
