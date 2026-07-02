@@ -4,7 +4,7 @@ from __future__ import annotations
 import tempfile
 from pathlib import Path
 from typing import Any, Dict
-from unittest.mock import MagicMock, Mock, patch
+from unittest.mock import Mock, patch
 
 import pytest
 
@@ -15,7 +15,6 @@ from test_sprint_lite import (
     write_html_report,
     write_report,
 )
-
 
 # ── run_case ───────────────────────────────────────────────
 

@@ -3,13 +3,11 @@ from __future__ import annotations
 
 import tempfile
 from pathlib import Path
-from typing import Any, Dict
 
 import pytest
 import yaml
 
 from test_sprint_lite import CaseResult, deep_get, load_suite
-
 
 # ── deep_get ────────────────────────────────────────────────
 
