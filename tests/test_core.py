@@ -35,6 +35,19 @@ class TestDeepGet:
         data = {"items": [1, 2, 3]}
         assert deep_get(data, "items") == [1, 2, 3]
 
+    def test_list_index_access(self):
+        data = {"items": [{"id": 1}, {"id": 2}]}
+        assert deep_get(data, "items.0.id") == 1
+        assert deep_get(data, "items.1.id") == 2
+
+    def test_list_index_out_of_range_raises_keyerror(self):
+        with pytest.raises(KeyError, match="JSON 路径不存在"):
+            deep_get({"items": [1, 2]}, "items.5")
+
+    def test_list_index_non_numeric_raises_keyerror(self):
+        with pytest.raises(KeyError, match="JSON 路径不存在"):
+            deep_get({"items": [1, 2]}, "items.foo")
+
     def test_null_value(self):
         assert deep_get({"x": None}, "x") is None
 

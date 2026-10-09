@@ -1,4 +1,4 @@
-﻿import argparse
+import argparse
 import html
 import json
 import time
@@ -33,6 +33,9 @@ def deep_get(data: Dict[str, Any], dotted_key: str) -> Any:
     for part in dotted_key.split("."):
         if isinstance(cur, dict) and part in cur:
             cur = cur[part]
+        elif isinstance(cur, list) and part.isdigit() and int(part) < len(cur):
+            # 支持数组索引访问（如 data.items.0.id）
+            cur = cur[int(part)]
         else:
             raise KeyError(f"JSON 路径不存在: {dotted_key}")
     return cur
