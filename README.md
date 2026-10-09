@@ -17,7 +17,7 @@
 - **并发执行** — 基于 `ThreadPoolExecutor` 的多线程并发
 - **双格式报告** — Markdown 表格 + 内联 CSS 的 HTML 报告
 - **CLI 工具** — `pip install` 后直接使用 `tsp run` 命令
-- **完整测试覆盖** — 44 个 pytest 用例，99% 代码覆盖率
+- **完整测试覆盖** — 47 个 pytest 用例，99% 代码覆盖率
 - **CI/CD 就绪** — GitHub Actions 自动 lint + 测试
 
 ---
@@ -184,7 +184,7 @@ test-sprint-lite/
 - 使用 `concurrent.futures.ThreadPoolExecutor` 实现多线程并发执行，支持用例级重试与超时配置
 - 实现了 Markdown 和 HTML 双格式报告输出，HTML 报告包含内联 CSS 样式与 XSS 防护
 - 使用 `pyproject.toml` 完成 CLI 工具打包，支持 `pip install` 与 `entry_points`
-- 编写 44 个 pytest 单元测试用例，达到 99% 代码覆盖率，配置 GitHub Actions 实现 CI 自动化
+- 编写 47 个 pytest 单元测试用例，达到 99% 代码覆盖率，配置 GitHub Actions 实现 CI 自动化
 - 使用 `unittest.mock` 完成网络请求的 mock 测试，覆盖正常路径、异常路径与重试逻辑
 
 ---
