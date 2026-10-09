@@ -174,7 +174,7 @@ test-sprint-lite/
 
 ## 📊 Real-world Evaluation / 真实场景实测
 
-在 [test-case-ai](https://github.com/shiyuqi234/test-case-ai) 的量化评测中，本工具作为执行端运行了 **93 个由 LLM 生成的用例**（3 个 OpenAPI spec、13 个接口），4 线程并发、输出 Markdown/HTML 双报告，全程稳定无崩溃。首次运行通过率 65.6%，其中行为确定的 httpbin 达 89.5%。
+在 [test-case-ai](https://github.com/shiyuqi234/test-case-ai) 的量化评测中，本工具作为执行端运行了 **93 个由 LLM 生成的用例**（3 个 OpenAPI spec、13 个接口），4 线程并发、输出 Markdown/HTML 双报告，全程稳定无崩溃。首次运行通过率 66.7%，其中行为确定的 httpbin 达 92.1%（数组路径断言 `a.b.0.c` 已支持）。
 
 ---
 
